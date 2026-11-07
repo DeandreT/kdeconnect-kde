@@ -1,3 +1,16 @@
+# KDE Connect Rust fork
+
+Independent Rust-native desktop rewrite of KDE Connect, hosted at
+https://github.com/DeandreT/kdeconnect-kde. This fork is not an official KDE release.
+The original Qt/C++ implementation and its licenses remain in this tree.
+
+The Rust application is an incremental port, **not a replacement daemon yet**.
+Its SMS composer uses the installed KDE Connect service through a separate D-Bus
+adapter while networking, pairing, history, and the remaining plugins are ported.
+See [the Rust architecture](rust/README.md) for boundaries and build instructions.
+
+## Original project
+
 # KDE Connect - desktop app
 
 KDE Connect is a multi-platform app that allows your devices to communicate (eg: your phone and your computer).
@@ -68,11 +81,9 @@ NetworkPackets can also have binary data attached that can't be serialized to JS
 
 ## Contributing
 
-To contribute patches, use [KDE Connect's GitLab](https://invent.kde.org/network/kdeconnect-kde). There you can also find a task list with stuff to do and links to other relevant resources. It is a good idea to also subscribe to the [KDE Connect mailing list](https://mail.kde.org/mailman/listinfo/kdeconnect). We can also be reached on IRC at #kdeconnect on irc.libera.chat or on [Telegram](https://t.me/joinchat/AOS6gA37orb2dZCLhqbZjg), contributions and feedback are warmly welcomed.
-
-For bug reporting, please use [KDE's Bugzilla](https://bugs.kde.org). Please do not use the issue tracker in GitLab since we want to keep everything in one place.
-
-Please know that all translations for all KDE apps are handled by the [localization team](https://l10n.kde.org/). If you would like to submit a translation, that should be done by working with the proper team for that language.
+For this fork, see [CONTRIBUTING.md](CONTRIBUTING.md) and use the fork's GitHub
+issues and pull requests. KDE's own project has separate contribution procedures
+at [its upstream repository](https://invent.kde.org/network/kdeconnect-kde).
 
 ## License
 [GNU GPL v2](https://www.gnu.org/licenses/gpl-2.0.html) and [GNU GPL v3](https://www.gnu.org/licenses/gpl-3.0.html)

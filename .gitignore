@@ -35,3 +35,5 @@ CMakeLists.txt.user
 /cmake-build*
 app/resources.generated.qrc
 smsapp/resources.generated.qrc
+# Rust build output is kept outside the source checkout.
+/target/
